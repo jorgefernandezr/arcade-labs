@@ -28,7 +28,7 @@ class MyGame(arcade.Window):
         arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
 
         # Create our ball
-        self.juego = Juego(20, 1)
+        self.juego = Juego(0,0)
 
     def cesped(self):
         # Cesped
