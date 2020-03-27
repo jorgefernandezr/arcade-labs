@@ -118,7 +118,8 @@ class MyGame(arcade.Window):
             texto = f" HAS PERDIDO "
             arcade.draw_text(texto, 200, 300, arcade.color.WHITE, 50)
             Aguila.center_x = 0
-            Mosca.center_y = 0
+            for Mosca in self.moscas_lista:
+                Mosca.remove_from_sprite_lists()
 
     def on_mouse_motion(self, x, y, dx, dy):
         # Para mover la rana
